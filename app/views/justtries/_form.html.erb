@@ -1,0 +1,27 @@
+<%= form_with(model: justtry) do |form| %>
+  <% if justtry.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(justtry.errors.count, "error") %> prohibited this justtry from being saved:</h2>
+
+      <ul>
+        <% justtry.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :test, style: "display: block" %>
+    <%= form.text_field :test %>
+  </div>
+
+  <div>
+    <%= form.label :trying, style: "display: block" %>
+    <%= form.text_field :trying %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

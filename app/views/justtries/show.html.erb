@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @justtry %>
+
+<div>
+  <%= link_to "Edit this justtry", edit_justtry_path(@justtry) %> |
+  <%= link_to "Back to justtries", justtries_path %>
+
+  <%= button_to "Destroy this justtry", @justtry, method: :delete %>
+</div>

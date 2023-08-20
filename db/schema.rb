@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_05_195029) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_20_042907) do
+  create_table "justtries", force: :cascade do |t|
+    t.string "test"
+    t.string "trying"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "microposts", force: :cascade do |t|
     t.text "content"
     t.integer "user_id"

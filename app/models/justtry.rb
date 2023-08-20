@@ -1,0 +1,2 @@
+class Justtry < ApplicationRecord
+end
